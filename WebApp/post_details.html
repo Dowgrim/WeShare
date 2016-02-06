@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  <title>WeShare WebApp</title>
+
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Material Design -->
+  <link href="dist/css/bootstrap-material-design.css" rel="stylesheet">
+  <link href="dist/css/ripples.min.css" rel="stylesheet">
+
+
+  <link href="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+
+  <!-- Load Jasny for slide in menu -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+  
+
+  <link rel="stylesheet" href="styles.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+
+</head>
+<body>
+  <div class="bs-component">
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu-fixed-left">
+            <a href="/index.html" class=""><i class="material-icons" style="color:white;">arrow_back</i></a>
+          </button>
+          <a class="navbar-brand" href="javascript:void(0)">WeShare Create Post</a>
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu-fixed-left" style="float:right;">
+            <a href="/index.html" ><i class="material-icons" style="color:white;">done</i></a>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- ~~~~~~ -->
+        <!-- START PANELS -->
+        <!-- ~~~~~~ -->
+
+        <div class="row">
+          <div class="col-xs-4" style="height:100%;">
+            <img src="http://www.adtechnology.co.uk/images/UGM-default-user.png" alt="" style="width: 100%;">
+          </div>
+          <div class="col-xs-8">
+            <!-- Title -->
+            <div class="form-group label-floating">
+              <label class="control-label" for="focusedInput1">Title</label>
+              <input class="form-control" id="focusedInput1" type="text">
+            </div>
+            <!-- Category -->
+            <div class="form-group">
+              <label for="select111" class="col-md-2 control-label">Category</label>
+
+              <div class="col-md-10">
+                <select id="select111" class="form-control">
+                  <option>Food</option>
+                  <option>Cleaning</option>
+                  <option>Sport</option>
+                  <option>Etc</option>
+                  <option>Etc</option>
+                </select>
+              </div>
+            </div>
+            <!-- Privacy Settings -->
+            <div class="togglebutton">
+              <label>
+                <input type="checkbox" checked> Show my Location
+              </label>
+            </div>
+            <div class="togglebutton">
+              <label>
+                <input type="checkbox" checked> Show my Number
+              </label>
+            </div>
+
+            <!-- Details -->
+          </div>
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="textArea" class="col-md-2 control-label">Details</label>
+
+              <div class="col-md-10">
+                <textarea class="form-control" rows="3" id="textArea"></textarea>
+                <span class="help-block">Give some information about your post</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+        <!-- ~~~~~~ -->
+        <!-- END PANELS -->
+        <!-- ~~~~~~ -->
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="dist/js/ripples.min.js"></script>
+<script src="dist/js/material.min.js"></script>
+<script src="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript for Jasny -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+
+
+
+<script>
+  $(function () {
+    $.material.init();
+    $(".shor").noUiSlider({
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+
+    $(".svert").noUiSlider({
+      orientation: "vertical",
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+  });
+</script>
+</body>
+</html>

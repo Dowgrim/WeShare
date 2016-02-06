@@ -1,0 +1,94 @@
+.navbar, .navbar.navbar-default li {
+	color: #333;
+}
+
+.navbar-toggle {
+	float: left;
+}
+.navbar-brand {
+	float: left;
+}
+
+#add-post {
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+}
+
+.map {
+	width: 100%;
+	height: 150px;
+	background: url("https://geoinfoindia.files.wordpress.com/2015/04/google-map.jpg") no-repeat center center;
+
+}
+
+.contact-buttons {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+}
+
+.btn-communicate {
+	display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+/*Chat Page styles*/
+.textBox .form-group {
+	margin-top: 0;
+	padding-bottom: 0;
+}
+
+.textBox .form-control {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#messageHistory {
+    position: absolute;
+    right: 15px;
+    left: 15px;
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+}
+
+.message-left {
+	background-color: #FFEBEE;
+	border-radius: 20px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+
+.message-right {
+	background-color: #E1F5FE;
+	text-align: right;
+	border-radius: 20px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+
+
+
+.newMessageArea {
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+	position: fixed;
+
+}
+
+.chat-tabs {
+	margin-top: -20px;
+	background-color: lightgray;
+}
+
+
+
